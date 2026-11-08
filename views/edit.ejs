@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>메뉴 수정</title>
+</head>
+<body>
+    <h2>메뉴 정보 수정</h2>
+    <form action="/edit/<%= item.id %>" method="post">
+        <p>메뉴명: <input type="text" name="name" value="<%= item.name %>"></p>
+        <p>가격: <input type="number" name="price" value="<%= item.price %>"></p>
+        <p>카테고리: <input type="text" name="category" value="<%= item.category %>"></p>
+        <input type="submit" value="수정하기">
+        <a href="/">취소</a>
+    </form>
+</body>
+</html>
